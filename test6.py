@@ -1,10 +1,15 @@
-year = int(input())
+numbers = [7, 9, 15, 18, 30, -3, 7, 12,-16,-12]
 
-if year % 4 ==0 and year % 100 !=0:
-    print('1')
+sum = 0
+i= 0
 
-elif year % 4 ==0 and year % 400 ==0:
-    print('1')
+print("짝수 번째 요소:", end=" ")
+while i < len(numbers):
+    if (i+1) % 2 == 0:
+        sum = sum + numbers[i]
 
-else:
-    print('0')
+        print(numbers[i], end=" , ")
+
+    i = i + 1
+print()
+print("합계:", sum)
